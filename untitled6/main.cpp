@@ -12,7 +12,7 @@ int main() {
     bool work=true;
     while(work)
     {
-        std::cout<<"Choose option:\n1.Add house\n2.Search house\n3.Delete\n4.Exit";
+        std::cout<<"Choose option:\n1.Add house\n2.Search house\n3.Delete\n4.Print 3 of the most populated homes\n5.Exit";
         int choose;
         do {
             std::cin>>choose;
@@ -53,6 +53,8 @@ int main() {
                 Zan[pos]=0;
                 break;
             case 4:
+                print3of();
+            case 5:
                 work=false;
                 break;
         }

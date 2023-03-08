@@ -96,3 +96,28 @@ void search_dom()
         }
     }
 }
+
+void print3of()
+{
+    Dom sp[3];
+    for(int i=0;i<3;++i)
+        sp[i].kolvozhilcov=-1;
+    for(int i=0;i<s;++i)
+    {
+        Dom maxim=Mas[i];
+        for(int j=0;j<3;++j)
+        {
+            if(maxim.kolvozhilcov>=sp[j].kolvozhilcov)
+            {
+                Dom tmp=sp[j];
+                sp[j]=maxim;
+                maxim=tmp;
+            }
+        }
+    }
+
+    for(int i=0;i<3;++i)
+    {
+        std::cout<<i+1<<") "<<sp[i].adres<<" "<<sp[i].kolvozhilcov<<"\n";
+    }
+}
