@@ -3,8 +3,7 @@
 
 #include<iostream>
 #include<string>
-#include<stdio.h>
-#include<string.h>
+#include <set>
 #include <malloc.h>
 
 struct Zhilec
@@ -26,5 +25,6 @@ int s;
 void initialization(Dom* Zdanie);
 void print_dom(Dom Zdanie);
 void search_dom();
+void print3of();
 
 #endif UNTITLED6_NAME1_H
