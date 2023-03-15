@@ -1,10 +1,5 @@
-#ifndef UNTITLED6_NAME1_H
-#define UNTITLED6_NAME1_H
-
 #include<iostream>
 #include<string>
-#include<stdio.h>
-#include<string.h>
 #include <malloc.h>
 
 struct Zhilec
@@ -20,11 +15,12 @@ struct Dom
     int kolvozhilcov;
     Zhilec* spisok;
 };
-Dom* Mas;
-int s;
+inline Dom* Mas;
+inline int s;
 
-void initialization(Dom* Zdanie);
+void initialization(Dom &Zdanie);
 void print_dom(Dom Zdanie);
 void search_dom();
+void print3of();
 
-#endif UNTITLED6_NAME1_H
+
