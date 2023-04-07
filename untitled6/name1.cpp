@@ -3,19 +3,19 @@
 void Zhilec::initzhilec()
 {
     out<<"Input surname of tenant:";
-    std::cin>>this->familiya;
+    in>>this->familiya;
     out<<"\n";
 
     do {
         out<<"Input number of flat:";
-        std::cin>>this->kvartira;
+        in>>this->kvartira;
     }
     while(0>=this->kvartira);
     out<<"\n";
 
     do {
         out<<"Input number of area:";
-        std::cin>>this->m3;
+        in>>this->m3;
 
     }
     while(0>=this->m3);
@@ -32,7 +32,7 @@ void Zhilec::printzhilec()
 void Dom::initialization()
 {
     out<<"Input home adress:";
-    std::cin>>this->adres;
+    in>>this->adres;
     printf("\n");
 
     //Input of date
@@ -95,7 +95,7 @@ void search_dom()
 {
     std::string adr;
     out<<"Input searching adress:";
-    std::cin>>adr;
+    in>>adr;
 
     for(int i=0;i<s;++i)
     {
