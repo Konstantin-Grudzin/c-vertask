@@ -1,7 +1,7 @@
 #include<iostream>
 #include<string>
 #include <malloc.h>
-#include<fstream>;
+#include<fstream>
 
 class Zhilec
 {
